@@ -143,6 +143,7 @@ ul {
   list-style: none;
 }
 
+/* control icon features move to contact-item or create mixin */
 .contact-item {
   text-emphasis: none;
   text-decoration: none;
