@@ -118,7 +118,7 @@ ul {
   background-color: var(--contact-icons-hov-color);
 }
 
-.logo-front {
+.logo {
   font-family: "Raleway", sans-serif;
   font-style: bold;
   font-size: 26px;
@@ -424,10 +424,6 @@ ul {
 /* Footer section*/
 .contact-end {
   background-color: var(--background-section-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
 }
 
 .flex-footer {
@@ -474,6 +470,34 @@ ul {
 .social-icon:focus {
   background-color: var(--contact-icons-hov-color);
   color: var(--icons-paragraph-bg-color);
+}
+
+.footer-address {
+  display: block;
+  color: var(--contact-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-decoration: none;
+}
+.address-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  display: block;
+  color: var(--contact-color);
+  text-decoration: none;
+  margin-top: 9px;
+  transition: color var(--transition-effect);
+}
+.address-item:hover,
+.address-item:focus {
+  color: var(--logo-sec-color);
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Portfolio styles */
@@ -585,32 +609,6 @@ ul {
   color: var(--contact-color);
 }
 
-.footer-address {
-  color: var(--contact-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-decoration: none;
-}
-.address-item {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: left;
-  display: block;
-  color: var(--contact-color);
-  text-decoration: none;
-  margin-top: 9px;
-  transition: color var(--transition-effect);
-}
-.address-item:hover,
-.address-item:focus {
-  color: var(--logo-sec-color);
-}
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
-}
 /* MODAL */
 
 .backdrop {
@@ -804,6 +802,7 @@ ul {
   text-transform: uppercase;
   display: block;
   margin-bottom: 20px;
+  color: var(--text-color);
 }
 
 .newsletter-wrap-box {
