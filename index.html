@@ -28,12 +28,9 @@
       <nav class="site-nav navigation">
         <div class="container flex-nav-container navigationFlexContainer">
           <!--Chlid 1-->
-          <div class="flex-nav-items navigationItems">
-            <a href="index.html" class="link navinationItems__logo"
-              ><span class="logo-front navigationItems__logoName">Web</span
-              ><span class="logo-back navigationItems__logoNameSecondary"
-                >Studio</span
-              ></a
+          <div class="flex-nav-items navigationItem__wrapper">
+            <a href="index.html" class="link logo"
+              >Web<span class="logo-back logo__nameSecondary">Studio</span></a
             >
             <ul class="control-list navigationList">
               <li>
@@ -594,50 +591,49 @@
       </section>
     </main>
     <!--Footer section-->
-    <footer class="contact-end">
-      <div class="container flex-footer">
-        <div class="container-footer">
-          <a href="index.html" class="link"
-            ><span class="logo-front">Web</span
-            ><span class="logo-back-sec">Studio</span></a
+    <footer class="contact-end footer">
+      <div class="container flex-footer footer__wrapper">
+        <div>
+          <a href="index.html" class="link logo"
+            >Web<span class="logo-back-sec logo__nameSecondary--color">Studio</span></a
           >
-          <address class="footer-address">
-            <span class="address-item-place"
+          <address class="footer-address footer__address">
+            <span class="address-item-place footer__addressPlace"
               >m. Warszawa, Aleje Jerozolimskie 21</span
             >
-            <a href="mailto:info@example.com" class="address-item"
+            <a href="mailto:info@example.com" class="address-item footer__addressContact"
               >info@example.com</a
             >
-            <a href="tel:+48111111111" class="address-item">+48 111 111 111</a>
+            <a href="tel:+48111111111" class="address-item footer__addressContact">+48 111 111 111</a>
           </address>
         </div>
-        <div class="joinus-container">
-          <h3 class="joinus-heading">Dołącz do nas</h3>
-          <ul class="joinus-icons social-icons">
+        <div class="joinus-container joinus">
+          <h3 class="joinus-heading joinus__heading">Dołącz do nas</h3>
+          <ul class="social-icons social__icons">
             <li>
-              <a href="#" class="footer-icon social-icon">
-                <svg class="svg-social-icon" width="20" height="20">
+              <a href="#" class="footer-icon social-icon  joinus__icon social__icon">
+                <svg class="svg-social-icon social__iconsSvg" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-icon social-icon">
-                <svg class="svg-social-icon" width="20" height="20">
+              <a href="#" class="footer-icon social-icon joinus__icon social__icon">
+                <svg class="svg-social-icon social__iconsSvg" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-icon social-icon">
-                <svg class="svg-social-icon" width="20" height="20">
+              <a href="#" class="footer-icon social-icon joinus__icon social__icon">
+                <svg class="svg-social-icon social__iconsSvg" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-icon social-icon">
-                <svg class="svg-social-icon" width="20" height="20">
+              <a href="#" class="footer-icon social-icon joinus__icon social__icon">
+                <svg class="svg-social-icon social__iconsSvg" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
@@ -645,23 +641,23 @@
           </ul>
         </div>
         <form
-          class="newsletter-signup"
+          class="newsletter-signup newsletter"
           name="newsletter-signup"
           autocomplete="on"
         >
-          <label class="newsletter-label" for="newsletter-mail"
+          <label class="newsletter-label newsletter__label" for="newsletter-mail"
             >zapisz się do newslettera</label
           >
-          <div class="newsletter-wrap-box">
+          <div class="newsletter-wrap-box newsletter__wrapper">
             <input
               id="newsletter-mail"
               type="email"
               name="email"
               placeholder="E-mail"
-              class="newsletter-item"
+              class="newsletter-item newsletter__item"
             />
-            <button class="newsletter-button" type="submit">
-              Zapisz się<svg width="24" height="24" class="newsletter-icon">
+            <button class="newsletter-button newsletter__button" type="submit">
+              Zapisz się<svg width="24" height="24" class="newsletter-icon newsletter__icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
