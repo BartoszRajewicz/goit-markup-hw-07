@@ -53,17 +53,18 @@ ul {
   text-decoration: none;
 }
 /* Navigation section*/
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.site-nav {
+.navigation {
   border-bottom: 1px solid #ececec;
 }
 
-.flex-nav-container {
+.navigationFlexContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,19 +72,19 @@ ul {
   padding-bottom: 25px;
 }
 
-.flex-nav-items {
+.navigationItem__wrapper{
   display: flex;
   align-items: center;
 }
 
-.control-list {
+.navigationList {
   display: flex;
   gap: 46px;
   list-style: none;
   margin-left: 93px;
 }
 
-.control-item {
+.navigationList__item {
   position: relative;
   font-size: 14px;
   font-weight: 500;
@@ -92,21 +93,21 @@ ul {
   color: var(--logo-color);
   transition: color var(--transition-effect);
 }
-.control-item:hover,
-.control-item:focus {
+.navigationList__item:hover,
+.navigationList__item:focus {
   color: var(--contact-icons-hov-color);
 }
 
-.control-item:hover .contact-icon,
-.contact-item:focus .contact-icon {
+.navigationList__item:hover .navigationContactList__icon,
+.navigationList__item:focus .navigationContactList__icon {
   fill: var(--contact-icons-hov-color);
 }
 
-.control-item-active {
+.navigationList__itemActive {
   color: var(--contact-icons-hov-color);
 }
 
-.control-item-active::after {
+.navigationList__itemActive::after {
   content: " ";
   position: absolute;
   left: 0px;
@@ -126,7 +127,7 @@ ul {
   color: var(--logo-sec-color);
   font-weight: 700;
 }
-.logo-back {
+.logo__nameSecondary{
   font-family: "Raleway", sans-serif;
   font-style: bold;
   font-size: 26px;
@@ -136,29 +137,29 @@ ul {
   font-weight: 700;
 }
 
-.container-contact {
+.navigationContactList {
   display: flex;
   align-items: center;
   gap: 50px;
   list-style: none;
 }
 
-/* control icon features move to contact-item or create mixin */
-.contact-item {
+
+.navigationContactList__item {
   text-emphasis: none;
   text-decoration: none;
   color: var(--contact-color);
   transition: color var(--transition-effect);
 }
 
-.contact-icon {
+.navigationContactList__icon {
   vertical-align: middle;
   margin-right: 10px;
   fill: var(--contact-color);
   transition: fill var(--transition-effect);
 }
 
-.smartphone-icon {
+.NavigationContactList--align {
   vertical-align: text-top;
 }
 
