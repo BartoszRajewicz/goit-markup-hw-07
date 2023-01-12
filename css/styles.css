@@ -720,55 +720,55 @@ ul {
   color: #75757580;
 }
 
-.modal-form-checkbox-item {
+.modalForm__checkboxItem {
   position: absolute;
   height: 15px;
   width: 16px;
   opacity: 0;
 }
 
-.modal-form-checkbox-blank,
-.modal-form-checkbox-checked {
+.modalForm__checkboxBlank,
+.modalForm__checkboxChecked {
   vertical-align: middle;
   margin-right: 8px;
 }
 
-.modal-form-checkbox-checked {
+.modalForm__checkboxChecked {
   display: none;
 }
 
-.modal-form-checkbox-blank {
+.modalForm__checkboxBlank {
   fill: var(--headers-color);
 }
 
-.modal-form-checkbox-item:checked ~ .modal-form-checkbox-checked {
+.modalForm__checkboxItem:checked ~ .modalForm__checkboxChecked {
   display: inline-block;
 }
 
-.modal-form-checkbox-item:checked ~ .modal-form-checkbox-blank {
+.modalForm__checkboxItem:checked ~ .modalForm__checkboxBlank {
   display: none;
 }
 
-.modal-form-checkbox-label {
+.modalForm__checkboxLabel {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--paragraph-color);
 }
 
-.modal-form-hyperlink {
+.modalForm__link {
   color: var(--logo-sec-color);
 }
 
-.modal-form-item:focus {
+.modalForm__item:focus {
   border: 1px solid var(--logo-sec-color);
 }
 
-.modal-form-input:focus-within .modal-form-icon {
+.modalForm__input:focus-within .modalForm__icon {
   fill: var(--logo-sec-color);
 }
 
-.modal-form-button {
+.modalForm__button {
   width: 200px;
   height: 50px;
   margin-top: 30px;
