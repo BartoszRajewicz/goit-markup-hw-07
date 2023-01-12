@@ -402,13 +402,13 @@ ul {
 
 /* Social-svg icons */
 
-.social-icons {
+.social__icons{
   display: flex;
   gap: 10px;
   list-style: none;
 }
 
-.social-icon {
+.social__icon {
   display: block;
   padding: 12px;
   font-size: 0;
@@ -416,8 +416,8 @@ ul {
   transition: border var(--transition-effect);
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social__icon:hover,
+.social__icon:focus {
   fill: var(--text-color);
 }
 
@@ -426,17 +426,13 @@ ul {
   background-color: var(--background-section-color);
 }
 
-.flex-footer {
+.footer__wrapper {
   padding: 60px 15px;
   display: flex;
   gap: 70px;
 }
 
-.address-item-place {
-  color: var(--text-color);
-}
-
-.logo-back-sec {
+.logo__nameSecondary {
   color: var(--text-color);
   font-family: "Raleway", sans-serif;
   font-style: bold;
@@ -448,12 +444,12 @@ ul {
   margin-bottom: 20px;
 }
 
-.joinus-container {
+.joinus {
   padding-top: 12px;
   max-width: 206px;
 }
 
-.joinus-heading {
+.joinus__heading {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -461,18 +457,18 @@ ul {
   color: var(--text-color);
 }
 
-.footer-icon {
+.joinus__icon {
   fill: var(--text-color);
   background-color: var(--background-footer-icon);
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social__icon:hover,
+.social__icon:focus {
   background-color: var(--contact-icons-hov-color);
   color: var(--icons-paragraph-bg-color);
 }
 
-.footer-address {
+.footer__address {
   display: block;
   color: var(--contact-color);
   font-size: 14px;
@@ -481,7 +477,7 @@ ul {
   text-align: left;
   text-decoration: none;
 }
-.address-item {
+.footer__addressContact{
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -492,11 +488,15 @@ ul {
   margin-top: 9px;
   transition: color var(--transition-effect);
 }
-.address-item:hover,
-.address-item:focus {
+
+.footer__addressPlace {
+  color: var(--text-color);
+}
+.footer__addressContact:hover,
+.footer__addressContact:focus {
   color: var(--logo-sec-color);
 }
-.address-item:not(:last-child) {
+.footer__addressContact:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -787,11 +787,11 @@ ul {
 
 /* NEWSLETTER SECTION */
 
-.newsletter-signup {
+.newsletter {
   padding-top: 12px;
 }
 
-.newsletter-label {
+.newsletter__label {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -802,13 +802,13 @@ ul {
   color: var(--text-color);
 }
 
-.newsletter-wrap-box {
+.newsletter__wrapper{
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.newsletter-item {
+.newsletter__item {
   width: 358px;
   height: 50px;
   color: var(--text-color);
@@ -819,13 +819,13 @@ ul {
   outline: none;
 }
 
-.newsletter-item::placeholder {
+.newsletter__item::placeholder {
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: left;
 }
 
-.newsletter-button {
+.newsletter__button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -839,7 +839,7 @@ ul {
   cursor: pointer;
 }
 
-.newsletter-icon {
+.newsletter__icon{
   margin-left: 24px;
   fill: var(--text-color);
   vertical-align: middle;
