@@ -423,7 +423,7 @@ ul {
 }
 
 /* Footer section*/
-.contact-end {
+.footer {
   background-color: var(--background-section-color);
 }
 
@@ -503,7 +503,7 @@ ul {
 
 /* Portfolio styles */
 
-.button-list {
+.portfolio {
   list-style-type: none;
   display: flex;
   gap: 8px;
@@ -511,7 +511,7 @@ ul {
   padding-bottom: 34px;
 }
 
-.button-items {
+.portfolio__button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
@@ -529,8 +529,8 @@ ul {
   cursor: pointer;
 }
 
-.button-items:hover,
-.button-items:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
   background-color: var(--logo-sec-color);
   color: var(--text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -540,7 +540,7 @@ ul {
 
 /* INDUSTRY SECTION */
 
-.industry-list {
+.portfolioList{
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -548,18 +548,18 @@ ul {
   padding-bottom: 94px;
 }
 
-.industry-img {
+.portfolioItem__image {
   display: block;
 }
 
-.industry-panel {
+.portofolioItem__panel {
   position: relative;
   overflow: hidden;
   margin: 0;
   background: var(--text-color);
 }
 
-.industry-panel-overlay {
+.portfolioItem__overlay {
   position: absolute;
   top: 100%;
   left: 0;
@@ -573,27 +573,27 @@ ul {
   transition: top var(--transition-effect);
 }
 
-.industry-panel-overlay p {
+.portfolioItem__overlay p  {
   padding: 49px 45px 49px 24px;
 }
 
-.industry-list-item:hover {
+.portfolioItem:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.industry-panel:hover .industry-panel-overlay {
+.portofolioItem__panel:hover .portfolioItem__overlay {
   top: 0;
 }
 
-.industry-caption {
+.portfolioItem__caption {
   padding: 20px 24px;
   border-left: 1px solid var(--bodrer-color);
   border-right: 1px solid var(--bodrer-color);
   border-bottom: 1px solid var(--bodrer-color);
 }
 
-.industry-name {
+.portfolioItem__header {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -602,7 +602,7 @@ ul {
   padding-bottom: 4px;
 }
 
-.industry-item {
+.portfolioItem__type{
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
