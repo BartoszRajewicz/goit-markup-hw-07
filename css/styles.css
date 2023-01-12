@@ -265,7 +265,7 @@ ul {
 }
 
 /* Images section */
-.images-header {
+.ourWork__header {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -273,22 +273,22 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-.images-list {
+.ourWork__list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.images-item {
+.ourWork__listItem {
   position: relative;
 }
 
-.images-photo {
+.ourWork__image {
   display: block;
 }
 
-.images-banner {
+.ourWork__subtittle {
   position: absolute;
   bottom: 0;
   left: 0;
