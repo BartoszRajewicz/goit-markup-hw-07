@@ -34,12 +34,14 @@
             >
             <ul class="navigationList">
               <li>
-                <a href="#" class="navigationList__item navigationList__itemActive">Agencja</a>
+                <a
+                  href="#"
+                  class="navigationList__item navigationList__itemActive"
+                  >Agencja</a
+                >
               </li>
               <li>
-                <a
-                  href="portfolio.html"
-                  class="navigationList__item"
+                <a href="portfolio.html" class="navigationList__item"
                   >Portfolio</a
                 >
               </li>
@@ -85,13 +87,13 @@
     <!--END Navigation section-->
     <main>
       <!-- Big Header section-->
-      <section class="first-section Hero">
-        <div class="first-section-box HeroWrapper">
-          <h1 class="header-primary Hero__header">
+      <section class="hero">
+        <div class="heroWrapper">
+          <h1 class="hero__header">
             Efektywne rozwiązania dla waszego biznesu
           </h1>
-          <div class="button-section Hero__button">
-            <button class="button Button" type="button" data-modal-open>
+          <div class="hero__button">
+            <button class="hero__buttonItem" type="button" data-modal-open>
               Zamów usługe
             </button>
           </div>
@@ -99,53 +101,53 @@
       </section>
       <!--END Big Header section-->
       <!-- Paragraphs section-->
-      <section class="paragraph-section loremSection">
+      <section class="loremSection">
         <div class="container">
-          <ul class="paragraphs-list loremSection__list">
+          <ul class="loremSection__list">
             <li>
-              <div class="paragraph-icon-box loremItems">
-                <svg class="icon loremItems__icon" width="70" height="70">
+              <div class="loremItems">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="header-paragraph loremSection__header">lorem ipsum</h3>
-              <p class="paragraph-items loremSection__paragraph">
+              <h3 class="loremSection__header">lorem ipsum</h3>
+              <p class="loremSection__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="paragraph-icon-box loremItems">
-                <svg class="icon loremItems__icon" width="70" height="70">
+              <div class="loremItems">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="header-paragraph loremSection__header">lorem ipsum</h3>
-              <p class="paragraph-items loremSection__paragraph">
+              <h3 class="loremSection__header">lorem ipsum</h3>
+              <p class="loremSection__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="paragraph-icon-box loremItems">
-                <svg class="icon loremItems__icon" width="70" height="70">
+              <div class="loremItems">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="header-paragraph loremSection__header">lorem ipsum</h3>
-              <p class="paragraph-items loremSection__paragraph">
+              <h3 class="loremSection__header">lorem ipsum</h3>
+              <p class="loremSection__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="paragraph-icon-box loremItems">
-                <svg class="icon" width="70" height="70">
+              <div class="loremItems">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="header-paragraph loremSection__header">lorem ipsum</h3>
-              <p class="paragraph-items loremSection__paragraph">
+              <h3 class="loremSection__header">lorem ipsum</h3>
+              <p class="loremSection__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -671,14 +673,10 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal__tittle">
-          Zostaw swoje dane w formularzu poniżej
-        </h2>
+        <h2 class="modal__tittle">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modalForm" name="modal-form" autocomplete="on">
           <div class="modalForm__wrapper">
-            <label class="modalForm__label" for="name"
-              >Imię</label
-            >
+            <label class="modalForm__label" for="name">Imię</label>
             <div class="modalForm__input">
               <input
                 id="name"
@@ -687,19 +685,13 @@
                 name="name"
                 required
               />
-              <svg
-                class="modalForm__icon"
-                width="18"
-                height="18"
-              >
+              <svg class="modalForm__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
           </div>
           <div class="modalForm__wrapper">
-            <label class="modalForm__label" for="phone-number"
-              >Telefon</label
-            >
+            <label class="modalForm__label" for="phone-number">Telefon</label>
             <div class="modalForm__input">
               <input
                 id="phone-number"
@@ -708,19 +700,13 @@
                 required
                 name="phone-number"
               />
-              <svg
-                class="modalForm__icon"
-                width="18"
-                height="18"
-              >
+              <svg class="modalForm__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
           </div>
           <div class="modalForm__wrapper">
-            <label class="modalForm__label" for="email"
-              >Email</label
-            >
+            <label class="modalForm__label" for="email">Email</label>
             <div class="modalForm__input">
               <input
                 class="modalForm__item modalForm__field"
@@ -729,19 +715,13 @@
                 type="email"
                 required
               />
-              <svg
-                class="modalForm__icon"
-                width="18"
-                height="18"
-              >
+              <svg class="modalForm__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
           </div>
           <div class="modalForm__wrapper">
-            <label
-              class="modalForm__label"
-              for="comment-section"
+            <label class="modalForm__label" for="comment-section"
               >Komentarz</label
             >
             <textarea
@@ -761,36 +741,20 @@
               name="policy"
               required
             />
-            <svg
-              class="modalForm__checkboxBlank"
-              width="16"
-              height="15"
-            >
+            <svg class="modalForm__checkboxBlank" width="16" height="15">
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
-            <svg
-              class="modalForm__checkboxChecked"
-              width="16"
-              height="15"
-            >
+            <svg class="modalForm__checkboxChecked" width="16" height="15">
               <use href="./images/icons.svg#icon-icon-check"></use>
             </svg>
-            <label
-              class="modalForm__checkboxLabel"
-              for="policy"
+            <label class="modalForm__checkboxLabel" for="policy"
               >Oświadczam iż akceptuje
-              <a class="modalForm__link" href=""
-                >Regulamin</a
-              >
+              <a class="modalForm__link" href="">Regulamin</a>
               i
-              <a class="modalForm__link" href=""
-                >Politykę Prywatności</a
-              >.
+              <a class="modalForm__link" href="">Politykę Prywatności</a>.
             </label>
           </div>
-          <button class="modalForm__button" type="submit">
-            Wyślij
-          </button>
+          <button class="modalForm__button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

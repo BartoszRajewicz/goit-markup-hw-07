@@ -52,6 +52,12 @@ ul {
 .link {
   text-decoration: none;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Navigation section*/
 
 .container {
@@ -163,11 +169,11 @@ ul {
 }
 
 /* Big header section*/
-.first-section {
+.hero {
   background-color: var(--background-section-color);
 }
 
-.first-section-box {
+.heroWrapper {
   padding: 200px 0;
   margin: 0 auto;
   max-width: 1600px;
@@ -183,7 +189,7 @@ ul {
     url("../images/bg-hero.jpg");
 }
 
-.header-primary {
+.hero__header {
   max-width: 696px;
   font-size: 44px;
   font-weight: 900;
@@ -193,7 +199,13 @@ ul {
   color: var(--text-color);
 }
 
-.button {
+.hero__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero__buttonItem {
   background-color: var(--logo-sec-color);
   border: none;
   color: var(--text-color);
@@ -211,37 +223,29 @@ ul {
   padding-left: 42px;
 }
 
-.button-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 
 /*Paragraphs section*/
 
-.paragraph-section {
+.loremSection {
   padding-top: 94px;
 }
 
-.paragraphs-list {
+.loremSection__list {
   list-style-type: none;
   display: flex;
   gap: 30px;
 }
 
-.paragraph-icon-box {
+.loremItems {
   padding: 25px 102.34px;
   margin-bottom: 30px;
   background-color: var(--icons-paragraph-bg-color);
   border-radius: 4px;
 }
 
-.header-paragraph {
+.loremSection__header {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -251,7 +255,7 @@ ul {
   color: var(--headers-color);
   padding-bottom: 10px;
 }
-.paragraph-items {
+.loremSection__paragraph {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
