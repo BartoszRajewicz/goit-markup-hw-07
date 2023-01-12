@@ -223,9 +223,6 @@ ul {
   padding-left: 42px;
 }
 
-
-
-
 /*Paragraphs section*/
 
 .loremSection {
@@ -310,14 +307,7 @@ ul {
   background-color: var(--background-photos-color);
 }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  list-style-type: none;
-}
-
-.team-header {
+.team__header {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -326,7 +316,14 @@ ul {
   margin-bottom: 50px;
 }
 
-.team-member {
+.team__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.team__member {
   display: inline-block;
   justify-content: center;
   background: var(--text-color);
@@ -337,21 +334,12 @@ ul {
   margin-bottom: 0px;
 }
 
-.team-member-details {
+.team__memberDescription {
   padding: 30px 0px;
   text-align: center;
 }
 
-.team-icons-list {
-  margin-top: 16px;
-  padding: 0 32px;
-}
-
-.team-icons {
-  fill: var(--icons-not-active);
-}
-
-.team-name {
+.team__memberName {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
@@ -361,7 +349,8 @@ ul {
   padding-left: 99px;
   padding-right: 99px;
 }
-.team-job {
+
+.team__memberJob {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -369,6 +358,15 @@ ul {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+}
+
+.team__iconsList {
+  margin-top: 16px;
+  padding: 0 32px;
+}
+
+.team__iconsListItem {
+  fill: var(--icons-not-active);
 }
 
 /* Our Clients section*/
@@ -406,7 +404,7 @@ ul {
 
 /* Social-svg icons */
 
-.social__icons{
+.social__icons {
   display: flex;
   gap: 10px;
   list-style: none;
@@ -481,7 +479,7 @@ ul {
   text-align: left;
   text-decoration: none;
 }
-.footer__addressContact{
+.footer__addressContact {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -806,7 +804,7 @@ ul {
   color: var(--text-color);
 }
 
-.newsletter__wrapper{
+.newsletter__wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -843,7 +841,7 @@ ul {
   cursor: pointer;
 }
 
-.newsletter__icon{
+.newsletter__icon {
   margin-left: 24px;
   fill: var(--text-color);
   vertical-align: middle;
