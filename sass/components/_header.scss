@@ -1,0 +1,33 @@
+.navigation {
+  border-bottom: 1px solid $borderNavigationLine;
+
+  &__wrapper {
+    @extend %flex-container-secondary;
+  }
+}
+
+.navigation-flex-container {
+  @extend %flex-container;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.navigation-list {
+  gap: 46px;
+  list-style: none;
+  margin-left: 93px;
+
+  &__item {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.17;
+    text-decoration: none;
+    color: $fontBlackColor;
+    transition: color $transitionValue;
+  }
+
+  &:hover,
+  &:focus {
+    color: $elementBlueColor;
+  }
+}
