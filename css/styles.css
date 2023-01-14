@@ -103,16 +103,16 @@ ul {
   color: var(--contact-icons-hov-color);
 }
 
-.navigation-list__item:hover .navigationContactList__icon,
-.navigation-list__item:focus .navigationContactList__icon {
+.navigation-list__item:hover .navigation-contact-list,
+.navigation-list__item:focus .navigation-contact-list__icon {
   fill: var(--contact-icons-hov-color);
 }
 
-.navigation-list__item-active {
+.navigation-list__item--active {
   color: var(--contact-icons-hov-color);
 }
 
-.navigation-list__item-active::after {
+.navigation-list__item--active::after {
   content: " ";
   position: absolute;
   left: 0px;
