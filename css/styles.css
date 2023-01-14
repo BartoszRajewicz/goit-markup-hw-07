@@ -77,7 +77,7 @@ ul {
   padding-bottom: 25px;
 }
 
-.navigation-item__wrapper {
+.navigation__wrapper {
   display: flex;
   align-items: center;
 }
