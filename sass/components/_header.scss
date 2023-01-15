@@ -13,6 +13,7 @@
 }
 
 .navigation-list {
+@extend %flex-container;
   gap: 46px;
   list-style: none;
   margin-left: 93px;
@@ -26,8 +27,8 @@
     transition: color $transitionValue;
   }
 
-  &:hover,
-  &:focus {
+  .navigation-list__item:hover,
+  .navigation-list__item:focus {
     color: $elementBlueColor;
   }
 
