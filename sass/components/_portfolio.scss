@@ -38,12 +38,15 @@
 }
 
 .portfolio-item {
+  position: relative;
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
 
+    .portfolio-item__overlay {
+      top: 0;
     }
-  
+  }
 
   &__image {
     display: block;
@@ -72,29 +75,18 @@
     text-align: center;
     color: $fontLightColor;
   }
-  &__panel {
-    position: relative;
-    margin: 0;
-    background: $white;
-
-    &:hover.portfolio-item__overlay {
-  top: 0;
-}
-  }
 
   &__overlay {
-     position: absolute;
-  top: 100%;
-  left: 0;
-  width: 370px;
-  height: 294px;
-  font-size: 18px;
-  text-align: left;
-  line-height: 1.55;
-  color: $white;
-  background-color: $overlayBackgroundTransparent;
-  transition: top $transitionValue;
-  padding: 49px 45px 49px 24px;
+    position: absolute;
+    overflow: hidden;
+    width: 370px;
+    height: 294px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.55;
+    color: $white;
+    background-color: $overlayBackgroundTransparent;
+    transition: top $transitionValue;
+    padding: 49px 45px 49px 24px;
+  }
 }
-}
-
