@@ -503,40 +503,7 @@ ul {
 
 /* Portfolio styles */
 
-.portfolio {
-  list-style-type: none;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  padding-bottom: 34px;
-}
 
-.portfolio__button {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--headers-color);
-  background-color: var(--background-photos-color);
-  width: 114px;
-  height: 38px;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-left: 3px;
-  margin-right: 3px;
-  cursor: pointer;
-}
-
-.portfolio__button:hover,
-.portfolio__button:focus {
-  background-color: var(--logo-sec-color);
-  color: var(--text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: all var(--transition-effect);
-}
 
 /* INDUSTRY SECTION */
 
