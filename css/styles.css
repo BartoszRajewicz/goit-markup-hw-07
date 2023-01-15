@@ -142,28 +142,28 @@ ul {
   font-weight: 700;
 }
 
-.navigation-contact-list {
+.navigation-contact {
   display: flex;
   align-items: center;
   gap: 50px;
   list-style: none;
 }
 
-.navigation-contact-list__item {
+.navigation-contact__item {
   text-emphasis: none;
   text-decoration: none;
   color: var(--contact-color);
   transition: color var(--transition-effect);
 }
 
-.navigation-contact-list__icon {
+.navigation-contact__icon {
   vertical-align: middle;
   margin-right: 10px;
   fill: var(--contact-color);
   transition: fill var(--transition-effect);
 }
 
-.navigation-contact-list--align {
+.navigation-contact--align {
   vertical-align: text-top;
 }
 
