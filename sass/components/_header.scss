@@ -21,34 +21,35 @@
       &:hover,
       &:focus {
         color: $elementBlueColor;
-        fill: $elementBlueColor;
       }
-       &--active {
-      color: $elementBlueColor;
+      &--active {
+        color: $elementBlueColor;
 
-      &::after {
-        content: " ";
-        position: absolute;
-        left: 0px;
-        bottom: -32px;
-        width: 100%;
-        height: 4px;
-        pointer-events: none;
-        border-radius: 2px;
-        background-color: $elementBlueColor;
+        &::after {
+          content: " ";
+          position: absolute;
+          left: 0px;
+          bottom: -32px;
+          width: 100%;
+          height: 4px;
+          pointer-events: none;
+          border-radius: 2px;
+          background-color: $elementBlueColor;
+        }
       }
-    }
     }
   }
 
   &-contact {
     @extend %flex-container-secondary;
     gap: 50px;
+
     &__item {
       text-emphasis: none;
       text-decoration: none;
       color: $fontLightColor;
       transition: color $transitionValue;
+
     }
 
     &__icon {
@@ -59,17 +60,17 @@
       &--align {
         vertical-align: text-top;
       }
+        .navigation-contact__item:hover,
+        .navigation-contact__item:focus &{
+          fill: $elementBlueColor;
+        }
 
-      &:hover ,
-      &:focus {
-        fill: $elementBlueColor;
       }
     }
   }
-}
 
-.navigation-flex-container{
-    @extend %flex-container;
-    padding-top: 24px;
+.navigation-flex-container {
+  @extend %flex-container;
+  padding-top: 24px;
   padding-bottom: 25px;
 }
