@@ -20,6 +20,9 @@
 
       &:hover,
       &:focus {
+        .navigation-contact__icon {
+          fill: $elementBlueColor;
+        }
         color: $elementBlueColor;
       }
       &--active {
@@ -49,7 +52,6 @@
       text-decoration: none;
       color: $fontLightColor;
       transition: color $transitionValue;
-
     }
 
     &__icon {
@@ -60,14 +62,9 @@
       &--align {
         vertical-align: text-top;
       }
-        .navigation-contact__item:hover,
-        .navigation-contact__item:focus &{
-          fill: $elementBlueColor;
-        }
-
-      }
     }
   }
+}
 
 .navigation-flex-container {
   @extend %flex-container;
