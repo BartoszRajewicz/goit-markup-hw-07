@@ -69,6 +69,12 @@
     margin-bottom: 10px;
     height: 40px;
     font-size: 12px;
+
+    &:focus-within {
+      .modal-form__icon {
+        fill: $elementBlueColor;
+      }
+    }
   }
   &__icon {
     position: absolute;
@@ -93,7 +99,44 @@
     transition: border $transitionValue;
 
     &:focus {
-  border: 1px solid $elementBlueColor;
+      border: 1px solid $elementBlueColor;
+    }
+  }
+
+  .modal-form__checkbox {
+    &-item {
+      position: absolute;
+      height: 15px;
+      width: 16px;
+      opacity: 0;
+
+      &:checked {
+        ~ .modal-form__checkbox-checked {
+          display: inline-block;
+        }
+        ~ .modal-form__checkbox-blank {
+          display: none;
+        }
+      }
+    }
+
+    &-label {
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: $fontLightColor;
+    }
+
+    &-blank {
+      fill: $fontBlackColor;
+      vertical-align: text-top;
+      margin-right: 8px;
+    }
+    &-checked {
+      vertical-align: text-top;
+      margin-right: 8px;
+      display: none;
+    }
   }
 
   &__comment {
@@ -112,40 +155,25 @@
       color: $placeholderColor;
     }
   }
-}
 
-
-.modal-form__checkbox {
-  &-item {
-    position: absolute;
-    height: 15px;
-    width: 16px;
-    opacity: 0;
-
-    :checked {
-      ~ .modal-form__checkbox-checked {
-        display: inline-block;
-      }
-      ~ .modal-form__checkbox-blank {
-         display: none;
-      }
-    }
+  &__link {
+    color: $elementBlueColor;
   }
 
-  &-blank {
-    vertical-align: text-top;
-    margin-right: 8px;
-    fill: $fontBlackColor;
+  &__button {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px 76px;
+    background-color: $elementBlueColor;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: $boxShadowCommon;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
   }
-
-  &-checked {
-    vertical-align: text-top;
-    margin-right: 8px;
-    display: none;
-  }
-
-
 }
-}
-
-
